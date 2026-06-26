@@ -2,6 +2,8 @@
 
 Este é um sistema web leve desenvolvido para gerenciar torneios, acompanhar estatísticas de desempenho dos atletas e visualizar o histórico de competições. O projeto foi construído com foco em simplicidade, rapidez no acesso aos dados e facilidade de manutenção.
 
+Link para a apresentação: [Presentation](https://drive.google.com/file/d/1T3DdN7m_IBwOGCNEDkp1xeLncuZHyLua/view?usp=drive_link)
+
 ## Funcionalidades
 * **Dashboard Global:** Visão geral com ranking consolidado de todos os torneios concluídos.
 * **Detalhes do Torneio:** Visualização específica por torneio, contendo a classificação detalhada de cada atleta.
