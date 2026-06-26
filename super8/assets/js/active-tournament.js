@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (!isEditingCompletedTournament && index > activeRoundIndex) {
                 btn.classList.add('locked');
-                btn.innerHTML = `Rd ${round.number}`;
+                btn.innerHTML = `🔒Rd ${round.number}`;
                 btn.disabled = true;
             } else {
                 btn.innerHTML = `Rodada ${round.number}`;
