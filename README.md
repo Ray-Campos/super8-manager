@@ -1,4 +1,4 @@
-# Gerenciador de Torneios
+# Super 8 manager
 
 Este é um sistema web leve desenvolvido para gerenciar torneios, acompanhar estatísticas de desempenho dos atletas e visualizar o histórico de competições. O projeto foi construído com foco em simplicidade, rapidez no acesso aos dados e facilidade de manutenção.
 
