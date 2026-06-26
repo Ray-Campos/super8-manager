@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super 8 | Estatisticas</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <header class="app-header">
+        <h1 id="page-title">Estatisticas e Resultados</h1>
+        <a href="../index.html" id="btn-back" style="color: white; text-decoration: none; font-weight: bold;">Voltar</a>
+    </header>
+
+    <main class="container">
+        
+        <div id="view-global" style="display: none;">
+            
+            <div class="dashboard-header" style="text-align: left; margin-bottom: 1.5rem;">
+                <h2>Ranking Geral</h2>
+                <p>Desempenho acumulado de todos os torneios concluidos.</p>
+            </div>
+
+            <div class="table-responsive" style="margin-bottom: 2rem;">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Atleta</th>
+                            <th>Partidas</th>
+                            <th>Vitorias</th>
+                            <th>Pontos</th>
+                        </tr>
+                    </thead>
+                    <tbody id="global-ranking-body">
+                        <tr><td colspan="4" style="text-align: center;">Carregando ranking...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="dashboard-header" style="text-align: left; margin-bottom: 1.5rem;">
+                <h2>Historico de Torneios</h2>
+            </div>
+
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Torneio</th>
+                            <th>Formato</th>
+                            <th>Acao</th>
+                        </tr>
+                    </thead>
+                    <tbody id="history-table-body">
+                        <tr><td colspan="3" style="text-align: center;">Carregando historico...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="view-specific" style="display: none;">
+            
+            <div class="dashboard-header" style="text-align: left; margin-bottom: 1.5rem;">
+                <h2 id="specific-tour-name">Resultados do Torneio</h2>
+                <p>Classificacao final baseada em vitorias (+2) e games vencidos (+1).</p>
+            </div>
+
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Pos</th>
+                            <th>Atleta</th>
+                            <th>Vitorias</th>
+                            <th>Games</th>
+                            <th>TotalPts</th>
+                        </tr>
+                    </thead>
+                    <tbody id="specific-ranking-body">
+                        <tr><td colspan="5" style="text-align: center;">Calculando resultados...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="../assets/js/statistics.js"></script>
+</body>
+</html>

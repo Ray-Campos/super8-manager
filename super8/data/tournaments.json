@@ -1,0 +1,490 @@
+[
+    {
+        "id": "trn_20260618_182626_955",
+        "name": "gfd",
+        "status": "in_progress",
+        "format": "rotating",
+        "current_round": 1,
+        "player_ids": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "created_at": "2026-06-18 18:26:26",
+        "rounds": [
+            {
+                "number": 1,
+                "completed": false,
+                "matches": [
+                    {
+                        "court": 1,
+                        "teamA": [
+                            6,
+                            7
+                        ],
+                        "teamB": [
+                            3,
+                            2
+                        ],
+                        "scoreA": null,
+                        "scoreB": null
+                    },
+                    {
+                        "court": 2,
+                        "teamA": [
+                            1,
+                            4
+                        ],
+                        "teamB": [
+                            5,
+                            8
+                        ],
+                        "scoreA": null,
+                        "scoreB": null
+                    }
+                ]
+            },
+            {
+                "number": 2,
+                "completed": false,
+                "matches": [
+                    {
+                        "court": 1,
+                        "teamA": [
+                            6,
+                            3
+                        ],
+                        "teamB": [
+                            1,
+                            5
+                        ],
+                        "scoreA": null,
+                        "scoreB": null
+                    },
+                    {
+                        "court": 2,
+                        "teamA": [
+                            7,
+                            2
+                        ],
+                        "teamB": [
+                            4,
+                            8
+                        ],
+                        "scoreA": null,
+                        "scoreB": null
+                    }
+                ]
+            },
+            {
+                "number": 3,
+                "completed": false,
+                "matches": [
+                    {
+                        "court": 1,
+                        "teamA": [
+                            6,
+                            2
+                        ],
+                        "teamB": [
+                            4,
+                            5
+                        ],
+                        "scoreA": null,
+                        "scoreB": null
+                    },
+                    {
+                        "court": 2,
+                        "teamA": [
+                            7,
+                            3
+                        ],
+                        "teamB": [
+                            1,
+                            8
+                        ],
+                        "scoreA": null,
+                        "scoreB": null
+                    }
+                ]
+            },
+            {
+                "number": 4,
+                "completed": false,
+                "matches": [
+                    {
+                        "court": 1,
+                        "teamA": [
+                            6,
+                            1
+                        ],
+                        "teamB": [
+                            7,
+                            4
+                        ],
+                        "scoreA": null,
+                        "scoreB": null
+                    },
+                    {
+                        "court": 2,
+                        "teamA": [
+                            3,
+                            5
+                        ],
+                        "teamB": [
+                            2,
+                            8
+                        ],
+                        "scoreA": null,
+                        "scoreB": null
+                    }
+                ]
+            },
+            {
+                "number": 5,
+                "completed": false,
+                "matches": [
+                    {
+                        "court": 1,
+                        "teamA": [
+                            6,
+                            4
+                        ],
+                        "teamB": [
+                            3,
+                            8
+                        ],
+                        "scoreA": null,
+                        "scoreB": null
+                    },
+                    {
+                        "court": 2,
+                        "teamA": [
+                            7,
+                            5
+                        ],
+                        "teamB": [
+                            2,
+                            1
+                        ],
+                        "scoreA": null,
+                        "scoreB": null
+                    }
+                ]
+            },
+            {
+                "number": 6,
+                "completed": false,
+                "matches": [
+                    {
+                        "court": 1,
+                        "teamA": [
+                            6,
+                            5
+                        ],
+                        "teamB": [
+                            2,
+                            4
+                        ],
+                        "scoreA": null,
+                        "scoreB": null
+                    },
+                    {
+                        "court": 2,
+                        "teamA": [
+                            7,
+                            8
+                        ],
+                        "teamB": [
+                            3,
+                            1
+                        ],
+                        "scoreA": null,
+                        "scoreB": null
+                    }
+                ]
+            },
+            {
+                "number": 7,
+                "completed": false,
+                "matches": [
+                    {
+                        "court": 1,
+                        "teamA": [
+                            6,
+                            8
+                        ],
+                        "teamB": [
+                            7,
+                            1
+                        ],
+                        "scoreA": null,
+                        "scoreB": null
+                    },
+                    {
+                        "court": 2,
+                        "teamA": [
+                            3,
+                            4
+                        ],
+                        "teamB": [
+                            2,
+                            5
+                        ],
+                        "scoreA": null,
+                        "scoreB": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "trn_20260625_173120_519",
+        "name": "Super 8",
+        "status": "completed",
+        "format": "fixed",
+        "current_round": 7,
+        "player_ids": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+        ],
+        "created_at": "2026-06-25 17:31:20",
+        "rounds": [
+            {
+                "number": 1,
+                "completed": true,
+                "matches": [
+                    {
+                        "court": 1,
+                        "teamA": [
+                            4,
+                            8
+                        ],
+                        "teamB": [
+                            2,
+                            3
+                        ],
+                        "scoreA": 1,
+                        "scoreB": 2
+                    },
+                    {
+                        "court": 2,
+                        "teamA": [
+                            7,
+                            1
+                        ],
+                        "teamB": [
+                            5,
+                            6
+                        ],
+                        "scoreA": 2,
+                        "scoreB": 1
+                    }
+                ]
+            },
+            {
+                "number": 2,
+                "completed": true,
+                "matches": [
+                    {
+                        "court": 1,
+                        "teamA": [
+                            4,
+                            8
+                        ],
+                        "teamB": [
+                            7,
+                            1
+                        ],
+                        "scoreA": 3,
+                        "scoreB": 2
+                    },
+                    {
+                        "court": 2,
+                        "teamA": [
+                            2,
+                            3
+                        ],
+                        "teamB": [
+                            5,
+                            6
+                        ],
+                        "scoreA": 2,
+                        "scoreB": 1
+                    }
+                ]
+            },
+            {
+                "number": 3,
+                "completed": true,
+                "matches": [
+                    {
+                        "court": 1,
+                        "teamA": [
+                            4,
+                            8
+                        ],
+                        "teamB": [
+                            5,
+                            6
+                        ],
+                        "scoreA": 2,
+                        "scoreB": 1
+                    },
+                    {
+                        "court": 2,
+                        "teamA": [
+                            2,
+                            3
+                        ],
+                        "teamB": [
+                            7,
+                            1
+                        ],
+                        "scoreA": 1,
+                        "scoreB": 3
+                    }
+                ]
+            },
+            {
+                "number": 4,
+                "completed": true,
+                "matches": [
+                    {
+                        "court": 1,
+                        "teamA": [
+                            4,
+                            8
+                        ],
+                        "teamB": [
+                            2,
+                            3
+                        ],
+                        "scoreA": 3,
+                        "scoreB": 0
+                    },
+                    {
+                        "court": 2,
+                        "teamA": [
+                            7,
+                            1
+                        ],
+                        "teamB": [
+                            5,
+                            6
+                        ],
+                        "scoreA": 0,
+                        "scoreB": 2
+                    }
+                ]
+            },
+            {
+                "number": 5,
+                "completed": true,
+                "matches": [
+                    {
+                        "court": 1,
+                        "teamA": [
+                            4,
+                            8
+                        ],
+                        "teamB": [
+                            7,
+                            1
+                        ],
+                        "scoreA": 7,
+                        "scoreB": 6
+                    },
+                    {
+                        "court": 2,
+                        "teamA": [
+                            2,
+                            3
+                        ],
+                        "teamB": [
+                            5,
+                            6
+                        ],
+                        "scoreA": 5,
+                        "scoreB": 6
+                    }
+                ]
+            },
+            {
+                "number": 6,
+                "completed": true,
+                "matches": [
+                    {
+                        "court": 1,
+                        "teamA": [
+                            4,
+                            8
+                        ],
+                        "teamB": [
+                            5,
+                            6
+                        ],
+                        "scoreA": 3,
+                        "scoreB": 4
+                    },
+                    {
+                        "court": 2,
+                        "teamA": [
+                            2,
+                            3
+                        ],
+                        "teamB": [
+                            7,
+                            1
+                        ],
+                        "scoreA": 5,
+                        "scoreB": 6
+                    }
+                ]
+            },
+            {
+                "number": 7,
+                "completed": true,
+                "matches": [
+                    {
+                        "court": 1,
+                        "teamA": [
+                            4,
+                            8
+                        ],
+                        "teamB": [
+                            2,
+                            3
+                        ],
+                        "scoreA": 2,
+                        "scoreB": 3
+                    },
+                    {
+                        "court": 2,
+                        "teamA": [
+                            7,
+                            1
+                        ],
+                        "teamB": [
+                            5,
+                            6
+                        ],
+                        "scoreA": 2,
+                        "scoreB": 1
+                    }
+                ]
+            }
+        ]
+    }
+]

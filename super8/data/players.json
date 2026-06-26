@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "name": "Carlos Silva",
+        "nickname": "Carlão"
+    },
+    {
+        "id": 2,
+        "name": "Breno",
+        "nickname": ""
+    },
+    {
+        "id": 3,
+        "name": "Mauro",
+        "nickname": ""
+    },
+    {
+        "id": 4,
+        "name": "River",
+        "nickname": ""
+    },
+    {
+        "id": 5,
+        "name": "Sage",
+        "nickname": ""
+    },
+    {
+        "id": 6,
+        "name": "Rowan",
+        "nickname": ""
+    },
+    {
+        "id": 7,
+        "name": "Alex",
+        "nickname": ""
+    },
+    {
+        "id": 8,
+        "name": "Jordan",
+        "nickname": ""
+    },
+    {
+        "id": 9,
+        "name": "Ada",
+        "nickname": ""
+    }
+]

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super 8 | Painel</title>
+    <link rel="stylesheet" href="assets/css/style.css?v=2">
+</head>
+<body>
+
+    <header class="app-header">
+        <h1>Super 8 Manager</h1>
+    </header>
+
+    <main class="container">
+        
+        <div class="dashboard-header">
+            <h2>Menu Principal</h2>
+            <p>Selecione uma ação para começar.</p>
+        </div>
+
+        <div class="dashboard-grid">
+            
+            <a href="views/tournament.html" class="card dashboard-card">
+                <div class="card-icon">🏆</div>
+                <h3>Gerenciar Torneio</h3>
+                <p>Inicie um novo Super 8 ou continue o torneio atual.</p>
+            </a>
+
+            <a href="views/statistics.html" class="card dashboard-card">
+                <div class="card-icon">📊</div>
+                <h3>Estatísticas</h3>
+                <p>Veja o histórico, ranking geral e evolução dos jogadores.</p>
+            </a>
+
+            <div class="card dashboard-card interactive-card">
+                <div class="card-icon">👥</div>
+                <h3>Jogadores</h3>
+                <p>Cadastre ou gerencie a base de atletas.</p>
+                
+                <div class="card-actions">
+                    <a href="views/players.html" class="btn-secondary">Gerenciar Todos</a>
+                    <button id="btn-quick-add" class="btn-primary">Novo +</button>
+                </div>
+
+                <div id="quick-add-form" class="quick-form" style="display: none;">
+                    <hr>
+                    <h4>Cadastro Rápido</h4>
+                    <form id="form-new-player">
+                        <input type="text" id="new-name" placeholder="Nome Completo" required>
+                        <input type="text" id="new-nickname" placeholder="Apelido (Opcional)">
+                        <div class="form-actions">
+                            <button type="button" id="btn-cancel-add" class="btn-cancel">Cancelar</button>
+                            <button type="submit" class="btn-success">Salvar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="assets/js/app.js?v=2"></script>
+</body>
+</html>

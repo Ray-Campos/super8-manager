@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super 8 | Gerenciar Torneios</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <header class="app-header">
+        <h1>Gerenciamento de Torneios</h1>
+        <a href="../index.html" style="color: white; text-decoration: none; font-weight: bold;">Voltar ao Painel</a>
+    </header>
+
+    <main class="container">
+        
+        <div class="manager-layout">
+            
+            <div class="manager-list-column">
+                <div class="dashboard-header" style="text-align: left; margin-bottom: 1rem;">
+                    <h2>Torneios <span id="tournament-counter" class="badge-count">0</span></h2>
+                    <p>Selecione um torneio para gerenciar as rodadas ou veja o historico.</p>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Nome do Torneio</th>
+                                <th>Formato</th>
+                                <th>Status</th>
+                                <th style="width: 250px;">Acoes</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tournament-table-body">
+                            <tr>
+                                <td colspan="4" style="text-align: center; color: var(--text-muted);">Carregando torneios...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="manager-form-column">
+                <div class="card">
+                    <h3 id="form-title">Novo Torneio</h3>
+                    <p id="form-description" style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+                        Defina as regras e selecione exatamente 8 jogadores.
+                    </p>
+                    <hr style="border: 0; border-top: 1px solid var(--border-color); margin-bottom: 1rem;">
+                    
+                    <form id="tournament-form">
+                        
+                        <label style="font-weight: bold; font-size: 0.9rem; display: block; margin-bottom: 0.3rem;">Nome da Competicao</label>
+                        <input type="text" id="tour-name" placeholder="Ex: Super 8 de Inverno" required>
+
+                        <label style="font-weight: bold; font-size: 0.9rem; display: block; margin-top: 0.5rem; margin-bottom: 0.3rem;">Formato de Jogo</label>
+                        <select id="tour-format" required>
+                            <option value="rotating">Rei da Quadra (Duplas Rotativas)</option>
+                            <option value="fixed">Todos Contra Todos (Duplas Fixas)</option>
+                        </select>
+
+                        <label style="font-weight: bold; font-size: 0.9rem; display: block; margin-top: 1rem; margin-bottom: 0.3rem;">
+                            Selecione 8 Jogadores (<span id="selected-count">0</span>/8)
+                        </label>
+                        
+                        <div id="rotating-selection">
+                            <div class="checkbox-grid" id="player-selection-grid">
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">Carregando base de atletas...</span>
+                            </div>
+                        </div>
+
+                        <div id="fixed-selection" style="display: none; margin-top: 0.5rem;">
+                            <div id="fixed-pairs-container" style="display: flex; flex-direction: column; gap: 0.8rem;"></div>
+                        </div>
+
+                        <div class="form-actions" style="margin-top: 1.5rem;">
+                            <button type="submit" id="btn-submit-form" class="btn-success" style="flex: 1; padding: 0.8rem;" disabled>Gerar Confrontos</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="../assets/js/tournaments.js"></script>
+</body>
+</html>

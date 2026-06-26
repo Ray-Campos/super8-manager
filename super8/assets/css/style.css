@@ -1,0 +1,315 @@
+/* Base Variables & Reset */
+:root {
+    --bg-color: #f4f7f6;
+    --card-bg: #ffffff;
+    --primary: #007bff;
+    --primary-hover: #0056b3;
+    --text-main: #333333;
+    --text-muted: #666666;
+    --border-color: #e0e0e0;
+    --locked-bg: #e9ecef;
+    --success: #28a745;
+    --warning: #ffc107;
+    --danger: #dc3545;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* Header */
+.app-header {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.container {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* View Toggles */
+.view-active { display: block; }
+.view-hidden { display: none; }
+.hidden { display: none !important; }
+
+/* Dashboard Specifics */
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.dashboard-card {
+    text-decoration: none;
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+a.dashboard-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-color: var(--primary);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Player Card Actions */
+.interactive-card { cursor: default; }
+.card-actions { display: flex; gap: 0.5rem; width: 100%; margin-top: 1rem; }
+
+/* Cards & Layout */
+.card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border: 1px solid var(--border-color);
+}
+
+/* Manager Split Layout (MOBILE FIRST) */
+.manager-layout {
+    display: flex;
+    flex-direction: column; /* Stacks vertically on mobile */
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.manager-list-column {
+    flex: 1;
+    order: 2; /* List goes below the form on mobile */
+}
+
+.manager-form-column {
+    flex: 1;
+    order: 1; /* Form goes on top on mobile */
+}
+
+/* Responsive Tables */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto; /* Allows swiping left/right on mobile */
+    background: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border: 1px solid var(--border-color);
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Prevents squishing */
+}
+
+.data-table th, .data-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.data-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.table-actions { display: flex; gap: 0.5rem; }
+.badge-count {
+    background-color: var(--primary);
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+.badge-status {
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: inline-block;
+}
+.status-active { background-color: #e6f4ea; color: #1e8e3e; }
+.status-completed { background-color: var(--locked-bg); color: var(--text-muted); }
+
+/* Forms & Inputs */
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.checkbox-grid label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    background: var(--bg-color);
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+}
+
+.radio-group label { display: block; margin-bottom: 0.5rem; font-size: 1.1rem; }
+.form-actions { display: flex; gap: 0.5rem; }
+
+/* Buttons */
+.btn-primary, .btn-secondary, .btn-success, .btn-cancel, .btn-action {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.2s;
+}
+
+.btn-primary { background: var(--primary); color: white; width: 100%; }
+.btn-primary:hover { background: var(--primary-hover); }
+.btn-secondary { background: var(--locked-bg); color: var(--text-main); width: 100%; }
+.btn-success { background: var(--success); color: white; flex: 1; }
+.btn-cancel { background: transparent; border: 1px solid var(--text-muted); color: var(--text-muted); flex: 1; }
+.btn-action { background: var(--primary); color: white; width: auto; padding: 0.4rem 0.8rem; font-size: 0.85rem; border-radius: 4px;}
+
+.btn-small { padding: 0.4rem 0.8rem; font-size: 0.85rem; border-radius: 4px; cursor: pointer; border: none; }
+.btn-edit { background-color: var(--warning); color: #212529; }
+.btn-delete { background-color: var(--danger); color: white; }
+
+/* Desktop Grid Adjustments */
+@media (min-width: 992px) {
+    .dashboard-grid {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: start;
+    }
+    .manager-layout {
+        flex-direction: row; /* Side-by-side on desktop */
+        align-items: flex-start;
+    }
+    .manager-list-column {
+        flex: 1.5;
+        order: 1; /* List on left */
+    }
+    .manager-form-column {
+        flex: 1;
+        order: 2; /* Form on right */
+        position: sticky;
+        top: 20px;
+    }
+}
+
+/* ==========================================
+   ACTIVE TOURNAMENT / MATCH CARDS
+   ========================================== */
+.round-tabs { 
+    display: flex; 
+    gap: 0.5rem; 
+    overflow-x: auto; 
+    margin-bottom: 1rem; 
+    padding-bottom: 0.5rem; 
+}
+
+.tab { 
+    padding: 0.5rem 1rem; 
+    border: 1px solid var(--border-color); 
+    background: var(--card-bg); 
+    border-radius: 4px; 
+    cursor: pointer; 
+    white-space: nowrap; 
+    font-weight: bold;
+}
+
+.tab.active { background: var(--primary); color: white; border-color: var(--primary); }
+.tab.locked { background: var(--locked-bg); color: var(--text-muted); cursor: not-allowed; border-style: dashed; }
+
+.match-card {
+    padding: 1.5rem 1rem 1rem 1rem; /* Extra top padding for the court badge */
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    position: relative;
+}
+
+.court-badge {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background: var(--warning);
+    color: #000;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.match-team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background: var(--bg-color);
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+
+.match-team span {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.vs-divider { 
+    text-align: center; 
+    font-size: 0.8rem; 
+    font-weight: 900; 
+    color: var(--text-muted); 
+    margin: -0.2rem 0; 
+}
+
+/* Override global input sizes specifically for the score boxes */
+.input-score { 
+    width: 60px !important; 
+    margin: 0 !important; 
+    text-align: center; 
+    font-weight: bold; 
+    font-size: 1.2rem; 
+    padding: 0.3rem !important;
+}

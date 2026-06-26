@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super 8 | Gerenciar Jogadores</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <header class="app-header">
+        <h1>👥 Gerenciamento de Atletas</h1>
+        <a href="../index.html" style="color: white; text-decoration: none; font-weight: bold;">← Voltar ao Painel</a>
+    </header>
+
+    <main class="container">
+        
+        <div class="manager-layout">
+            
+            <div class="manager-list-column">
+                <div class="dashboard-header" style="text-align: left; margin-bottom: 1rem;">
+                    <h2>Jogadores Cadastrados <span id="player-counter" class="badge-count">0</span></h2>
+                    <p>Lista oficial de atletas disponíveis para os torneios.</p>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Apelido</th>
+                                <th style="width: 150px;">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="player-table-body">
+                            <tr>
+                                <td colspan="3" style="text-align: center; color: var(--text-muted);">Carregando jogadores...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="manager-form-column">
+                <div class="card">
+                    <h3 id="form-title">Novo Jogador</h3>
+                    <p id="form-description" style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+                        Preencha os dados abaixo para inserir um atleta.
+                    </p>
+                    <hr style="border: 0; border-top: 1px solid var(--border-color); margin-bottom: 1rem;">
+                    
+                    <form id="player-form">
+                        <input type="hidden" id="player-id" value="">
+
+                        <label style="font-weight: bold; font-size: 0.9rem; display: block; margin-bottom: 0.3rem;">Nome Completo</label>
+                        <input type="text" id="player-name" placeholder="Ex: Carlos Silva" required style="width: 100%; margin-bottom: 1rem;">
+
+                        <label style="font-weight: bold; font-size: 0.9rem; display: block; margin-bottom: 0.3rem;">Apelido (Opcional)</label>
+                        <input type="text" id="player-nickname" placeholder="Ex: Carlinhos" style="width: 100%; margin-bottom: 1.5rem;">
+
+                        <div class="form-actions">
+                            <button type="button" id="btn-reset-form" class="btn-cancel" style="display: none;">Cancelar Edição</button>
+                            <button type="submit" id="btn-submit-form" class="btn-success" style="flex: 1; padding: 0.8rem;">Salvar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="../assets/js/players.js"></script>
+</body>
+</html>
