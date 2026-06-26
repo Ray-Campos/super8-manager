@@ -313,3 +313,78 @@ input[type="text"], input[type="number"], select {
     font-size: 1.2rem; 
     padding: 0.3rem !important;
 }
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.footer-github {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: #24292f;
+    color: #fff;
+    transition: background-color 0.2s ease;
+}
+
+.footer-github:hover {
+    background-color: #444;
+}
+
+/* ==========================================
+   SCORE STEPPER COMPONENTS
+   ========================================== */
+.score-stepper {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 0.2rem;
+}
+
+.btn-stepper {
+    background: var(--locked-bg);
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-main);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.1s;
+}
+
+.btn-stepper:active:not(:disabled) {
+    background: #d0d0d0;
+}
+
+.btn-stepper:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Adjust the input to fit seamlessly between the buttons */
+.score-stepper .input-score {
+    width: 35px !important;
+    border: none !important;
+    padding: 0 !important;
+    background: transparent;
+    -moz-appearance: textfield; /* Firefox: hide arrows */
+}
+
+/* Webkit (Chrome/Safari): hide arrows */
+.score-stepper .input-score::-webkit-outer-spin-button,
+.score-stepper .input-score::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

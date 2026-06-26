@@ -52,9 +52,12 @@ if (!isset($tournament['rounds'][$roundIndex])) {
 
 $currentRound = &$tournament['rounds'][$roundIndex];
 
-if ($currentRound['completed']) {
+if ($currentRound['completed'] && $tournament['status'] !== 'completed') {
     http_response_code(400);
-    echo json_encode(['success' => false, 'error' => 'This round is already completed.']);
+    echo json_encode([
+        'success' => false,
+        'error' => 'This round is already completed.'
+    ]);
     exit;
 }
 
